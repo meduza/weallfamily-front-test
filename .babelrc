@@ -1,1 +1,14 @@
-{"presets":["es2015"]}
+{
+    "presets": [
+//        "es2015",
+        "react",
+//        "react-native",
+//        "es2015-node",
+        "es2015-rollup",
+    ],
+    "plugins": [
+        "transform-class-properties",
+        "external-helpers",
+        "transform-runtime",
+    ]
+}
