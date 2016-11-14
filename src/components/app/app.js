@@ -1,3 +1,4 @@
+import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore } from 'redux'
 
@@ -19,4 +20,4 @@ const render = () => ReactDOM.render(
 );
 
 render()
-store.subscribe(render)
+userStore.subscribe(render)
