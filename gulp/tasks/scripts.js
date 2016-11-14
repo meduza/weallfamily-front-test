@@ -10,15 +10,15 @@ const scripts = () =>
             //base: 'src/components/app'
             //base: '.'
         })
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(babel())
         // .pipe(gulp.dest(config.dest))
-        // .pipe(browserify({
-        //     insertGlobals : true,
-        //     debug : !!process.env.DEV
-        // }))
+        .pipe(browserify({
+            insertGlobals: true,
+            debug: !!process.env.DEV
+        }))
         .pipe(concat(config.out))
-        .pipe(sourcemaps.write('.'))
+        //.pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(config.dest));
 
 gulp.task('scripts', scripts);
