@@ -6,9 +6,8 @@ import getCookie from '../helpers/getCookie.js';
 //xhr.setRequestHeader("Authorization", "Basic " + btoa(username + ":" + password));
 
 class Login extends Component {
-    constructor(){
-        super();
-        this.propTypes = {
+    static get propTypes(){
+        return {
             value: PropTypes.number.isRequired,
             onLogin: PropTypes.func.isRequired,
             onLogout: PropTypes.func.isRequired
