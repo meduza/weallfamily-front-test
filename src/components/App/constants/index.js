@@ -1,4 +1,7 @@
 const APP = {
-    COOKIE: 'test'
+    COOKIE: 'test',
+    LOGIN: 'login',
+    LOGOUT: 'logout',
+    LOGIN_ASYNC: 'loginAsync',
 }
 export default APP

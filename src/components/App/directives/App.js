@@ -2,7 +2,7 @@ import React from 'react'
 import Login from '../../../components/Login'
 import { login, logout, loginAsync } from '../../../components/App/actions'
 
-const App = ({ dispatch }) => {
+const App = () => {
     let input
 
     return (
