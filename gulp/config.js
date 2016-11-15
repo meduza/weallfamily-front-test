@@ -1,13 +1,13 @@
 export default {
     src: [
-        'src/components/app/app.js',
-        'src/components/app/constants/USER.js',
-        'src/components/app/directives/Login.js',
-        'src/components/app/helpers/getCookie.js',
-        'src/components/app/reducers/userReducer.js',
+        'src/components/App/index.js',
+        'src/components/Login/constants/index.js',
+        'src/components/Login/index.js',
+        'src/helpers/getCookie.js',
+        'src/components/App/reducers/index.js',
     ],
     out: 'scripts.js',
-    entry: 'src/components/app/app.js',
+    entry: 'src/components/app',
     format: 'iife',
     dest: 'build'
 }

@@ -1,6 +1,5 @@
-import User from '../types/User'
-import USER from '../constants/USER'
-import APP from '../constants/APP'
+import USER from '../../Login/constants'
+import APP from '../../App/constants'
 
 export default (state = 0, action) => {
     switch (action.type) {
